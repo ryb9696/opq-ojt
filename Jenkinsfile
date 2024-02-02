@@ -10,7 +10,15 @@ pipeline {
             }
         }
 
-        stage('packer validate') {
+        stage('packer plugin') {
+            steps {
+                script {
+                    sh 'packer plugins install github.com/hashicorp/amazon'
+                }
+            }
+        }
+        
+         stage('packer validate') {
             steps {
                 script {
                     sh 'packer validate -var-file=vars.json template.json'
