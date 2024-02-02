@@ -21,7 +21,7 @@
           "most_recent": true
         },
         "vpc_id": "vpc-0c6d1f4fae5ac5f83",
-        "sunnet_id": "subnet-023a9ddfa7fdfc561",
+        "subnet_id": "subnet-023a9ddfa7fdfc561",
         "security_group_id": "sg-06ab06ab9b71480b8",
         "instance_type": "t2.micro",
         "ssh_username": "{{user `ssh_username`}}",
