@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    
+    environment {
+        AWS_CREDENTIALS = credentials('packer')
+    }
+
     stages {
 
         stage('Checkout Source') {
